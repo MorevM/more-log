@@ -1,0 +1,50 @@
+{
+  "name": "@morev/more-log",
+  "version": "1.0.0",
+  "description": "Stunningly dumb module for better terminal output",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/more-log.cjs",
+  "module": "dist/more-log.js",
+  "exports": {
+    ".": {
+      "import": "./dist/more-log.js",
+      "require": "./dist/more-log.cjs"
+    }
+  },
+  "types": "types/index.d.ts",
+  "homepage": "https://github.com/MorevM/more-log#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MorevM/more-log"
+  },
+  "bugs": {
+    "url": "https://github.com/MorevM/more-log/issues"
+  },
+  "author": {
+    "name": "Maxim Morev",
+    "email": "max.seainside@gmail.com"
+  },
+  "files": [
+    "types",
+    "dist"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figures": "^4.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "rollup": "^2.60.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
